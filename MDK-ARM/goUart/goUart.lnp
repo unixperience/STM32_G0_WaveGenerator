@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"gouart\startup_stm32g071xx.o"
+"gouart\main.o"
+"gouart\stm32g0xx_it.o"
+"gouart\stm32g0xx_hal_msp.o"
+"gouart\wavegeneration.o"
+"gouart\stm32g0xx_hal_gpio.o"
+"gouart\stm32g0xx_hal_uart.o"
+"gouart\stm32g0xx_hal_uart_ex.o"
+"gouart\stm32g0xx_hal_tim.o"
+"gouart\stm32g0xx_hal_tim_ex.o"
+"gouart\stm32g0xx_hal_rcc.o"
+"gouart\stm32g0xx_hal_rcc_ex.o"
+"gouart\stm32g0xx_ll_rcc.o"
+"gouart\stm32g0xx_hal_flash.o"
+"gouart\stm32g0xx_hal_flash_ex.o"
+"gouart\stm32g0xx_hal_dma.o"
+"gouart\stm32g0xx_hal_dma_ex.o"
+"gouart\stm32g0xx_hal_pwr.o"
+"gouart\stm32g0xx_hal_pwr_ex.o"
+"gouart\stm32g0xx_hal_cortex.o"
+"gouart\stm32g0xx_hal.o"
+"gouart\stm32g0xx_hal_exti.o"
+"gouart\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "goUart\goUart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "goUart.map" -o goUart\goUart.axf
